@@ -1,7 +1,7 @@
 # Drew Bomhof's dot files
 This is how I build my current environment
 
-Thanks to [r00k](http://github.com/r00k) for the vim-script functions
+Thanks to [r00k](http://github.com/r00k/dotfiles) for the vim-script functions
 and a large number of the aliases / ruby snippets
 
 ## Installation

@@ -24,9 +24,6 @@
 	tool = diffmerge
 [core]
 	excludesfile = /Users/dbomhof/.gitignore_global
-[github]
-	user = syncrou
-	token = 89c12780d05c35eb07d01ebdfecbaef1
 [push]
 	default = matching
 [diff]

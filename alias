@@ -1,0 +1,68 @@
+# Generic file viewing aliases
+alias ls='ls -G'
+alias ll='ls -alGh'
+# Bi ssh aliases
+alias bis='ssh -p 8022'
+alias bisc='scp -P 8022'
+
+# git aliases
+alias gad='git add --all'
+alias gbr="git br"
+alias gc='git commit'
+alias gca='git commit -a'
+alias gcam='git commit -a -m'
+alias gco="git co"
+alias gcaa='git commit -a --amend -C HEAD'
+alias gcl='git clone'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gl="git l"
+alias gp="git pull"
+alias gpr="git pull --rebase"
+alias gpush="git push"
+alias gpsuh="git push"
+alias gs="git st"
+alias gcnt="git shortlog -s -n"
+
+
+# Generic GIT aliases for pivotal commits
+alias pt="git log -1 | ack -1o pt-........"
+alias ptc="git log -5 | ack pt-........"
+
+# Stuff to speed me up
+alias aliases='vim ~/bin/dotfiles/alias'
+alias api="cd ~/bi/onramp_api"
+alias b="cd ~/bi"
+alias be="bundle exec"
+alias bi="bundle install"
+alias bu="bundle update"
+alias cs="ssh centuryd@www.centurydriving.com"
+alias csm="ssh -L 2812:127.0.0.1:2812 centuryd@www.centurydriving.com"
+alias msm="ssh -L 2812:127.0.0.1:2812 messaging@api.centurydriving.com"
+alias d='cd ~/bin/dotfiles'
+alias funcs='be rake test:functionals'
+alias lu='ldc; gco feature/product_demo; gp; gco develop; gpr; gco master; gp;'
+alias nt='vim ~/Dropbox/notes/2013.txt'
+alias m='cd ~/bi/messaging'
+alias miq='cd ~/syncrou/manageiq'
+alias mon='mongrel_rails start -adev'
+alias ms='ssh messaging@sms.centurydriving.com'
+alias o='cd ~/bi/onramp'
+alias rc='rails console'
+alias redis='redis-server'
+alias resq="be 'QUEUE=* rake resque:work'"
+alias retag='ctags -R --languages=ruby --fields=+l --tag-relative=yes'
+alias rs='rails server'
+alias sl='screen -list'
+alias so='source ~/bin/dotfiles/bash_profile'
+alias solr='be rake sunspot:solr:run'
+alias ss='screen -S'
+alias sx='screen -x'
+alias units='be rake test:units'
+alias vu='cd /Volumes/SlowTrain/Vagrant/cdg && vagrant up'
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+
+# Music / Play stuff
+alias wcsg='vlc http://50.22.253.47/wcsg-fm.aac.m3u'

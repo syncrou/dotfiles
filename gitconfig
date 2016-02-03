@@ -1,0 +1,46 @@
+[user]
+	name = Drew Bomhof
+	email = dbomhof@redhat.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = always
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	rb = rebase
+	# Log display from screencast, with train tracks.
+	l  = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+	# Alternate log display from Scott Chacon
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	# Usage: git track origin/feature-123-login-form
+	track = checkout -t
+[merge]
+	summary = true
+	tool = diffmerge
+[core]
+	excludesfile = /Users/dbomhof/.gitignore_global
+[github]
+	user = syncrou
+	token = 89c12780d05c35eb07d01ebdfecbaef1
+[push]
+	default = matching
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[mergetool "diffmerge"]
+	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+	trustExitCode = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[init]
+	templatedir = ~/.git_template

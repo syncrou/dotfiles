@@ -1,11 +1,44 @@
 set nocompatible                  " Must come first because it changes other options.
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+Plugin 'mileszs/ack.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdTree'
+Plugin 'msanders/snipmate.vim'
+Plugin 'syncrou/vim-flog'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'danro/rename.vim'
+Plugin 'airblade/vim-rooter'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-scripts/tComment'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-sleuth'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-ragtag'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 " Turn on pathogen
-execute pathogen#infect()        
+"execute pathogen#infect()        
 
 syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
-
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 

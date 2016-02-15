@@ -32,7 +32,7 @@ alias pt="git log -1 | ack -1o pt-........"
 alias ptc="git log -5 | ack pt-........"
 
 # Stuff to speed me up
-alias aliases='vim ~/bin/dotfiles/alias'
+alias aliases='vim ~/.dotfiles/alias'
 alias api="cd ~/bi/onramp_api"
 alias b="cd ~/bi"
 alias be="bundle exec"
@@ -41,11 +41,12 @@ alias bu="bundle update"
 alias cs="ssh centuryd@www.centurydriving.com"
 alias csm="ssh -L 2812:127.0.0.1:2812 centuryd@www.centurydriving.com"
 alias msm="ssh -L 2812:127.0.0.1:2812 messaging@api.centurydriving.com"
-alias d='cd ~/bin/dotfiles'
+alias d='cd ~/.dotfiles'
 alias funcs='be rake test:functionals'
 alias lu='ldc; gco feature/product_demo; gp; gco develop; gpr; gco master; gp;'
-alias nt='vim ~/Dropbox/notes/2013.txt'
+alias nt='vim ~/Dropbox/notes/2016.txt'
 alias m='cd ~/bi/messaging'
+alias mcpe='ssh ubuntu@10.0.1.101'
 alias miq='cd ~/syncrou/manageiq'
 alias mon='mongrel_rails start -adev'
 alias ms='ssh messaging@sms.centurydriving.com'
@@ -56,12 +57,17 @@ alias resq="be 'QUEUE=* rake resque:work'"
 alias retag='ctags -R --languages=ruby --fields=+l --tag-relative=yes'
 alias rs='rails server'
 alias sl='screen -list'
-alias so='source ~/bin/dotfiles/bash_profile'
+alias so='source ~/.dotfiles/bash_profile'
 alias solr='be rake sunspot:solr:run'
 alias ss='screen -S'
 alias sx='screen -x'
+alias tn='tmux new'
+alias ts='tmux new -s'
+alias tx='tmux a -t'
 alias units='be rake test:units'
 alias vu='cd /Volumes/SlowTrain/Vagrant/cdg && vagrant up'
+alias v='vim'
+alias vi='vim'
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 # Music / Play stuff

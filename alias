@@ -37,6 +37,7 @@ alias api="cd ~/bi/onramp_api"
 alias b="cd ~/bi"
 alias be="bundle exec"
 alias bi="bundle install"
+alias bj='open https://redhat.bluejeans.com'
 alias bu="bundle update"
 alias cs="ssh centuryd@www.centurydriving.com"
 alias csm="ssh -L 2812:127.0.0.1:2812 centuryd@www.centurydriving.com"

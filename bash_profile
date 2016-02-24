@@ -18,3 +18,5 @@ export NODE_PATH=/usr/local/lib/node
 #   access to them
 stty -ixon -ixoff
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

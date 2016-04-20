@@ -2,3 +2,5 @@
 .DS_Store
 .ruby-gemset
 tags
+.idea
+node_modules/*

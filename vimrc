@@ -147,6 +147,7 @@ map <Leader>i :!irb<cr>
 map <Leader>con :!bin/console<cr>
 map <leader>nt :NERDTree<cr>
 map <Leader>o :w<cr>:call RunCurrentLineInTest()<CR>
+map <Leader>rc :RuboCop<cr>
 map <Leader>sn :e ~/.vim/bundle/snipmate.vim/snippets/ruby.snippets<CR>
 map <Leader>st :!DEBUG=true ruby -Itest % -n "//"<left><left>
 map <Leader>t :w<cr>:call RunCurrentTest()<CR>

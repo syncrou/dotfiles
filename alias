@@ -28,6 +28,7 @@ alias gcnt="git shortlog -s -n"
 
 
 # Generic GIT aliases for pivotal commits
+alias last="git log -1 --format='%H'"
 alias pt="git log -1 | ack -1o pt-........"
 alias ptc="git log -5 | ack pt-........"
 
@@ -42,16 +43,18 @@ alias bjsu='open https://bluejeans.com/7642919332/?name=Drew%20Bomhof'
 alias bu="bundle update"
 alias cs="ssh centuryd@www.centurydriving.com"
 alias csm="ssh -L 2812:127.0.0.1:2812 centuryd@www.centurydriving.com"
-alias matrix="cat /dev/urandom | hexdump"
-alias msm="ssh -L 2812:127.0.0.1:2812 messaging@api.centurydriving.com"
 alias d='cd ~/.dotfiles'
+alias last-files="last | gitopen show"
 alias nt='vim ~/Dropbox/notes/2016.txt'
 alias m='cd ~/bi/messaging'
+alias matrix="cat /dev/urandom | hexdump"
 alias mcpe='ssh ubuntu@10.0.1.101'
 alias miq='cd ~/syncrou/manageiq'
 alias mon='mongrel_rails start -adev'
 alias ms='ssh messaging@sms.centurydriving.com'
+alias msm="ssh -L 2812:127.0.0.1:2812 messaging@api.centurydriving.com"
 alias o='cd ~/bi/onramp'
+alias ol='vim `last-files`'
 alias rc='rails console'
 alias redis='redis-server'
 alias resq="be 'QUEUE=* rake resque:work'"

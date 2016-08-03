@@ -1,4 +1,4 @@
-export PATH=/Volumes/Macintosh\ HD/Users/dbomhof/bin:/usr/local/bin:$PATH
+export PATH=~/.dotfiles/bin:/Volumes/Macintosh\ HD/Users/dbomhof/bin:/usr/local/bin:$PATH
 
 # Alias file
 source ~/.dotfiles/alias

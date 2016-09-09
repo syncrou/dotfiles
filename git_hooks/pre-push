@@ -5,7 +5,7 @@
 push_command=$(ps -ocommand= -p $PPID)                                                                                  
 
 if [[ $push_command =~ 'force' ]]; then                                                                                 
-  say "I'm sorry Dave, I'm afraid I can't do that" using Vicki
+  say "Ohhhh Nooooo! NOT AGAIN!" -v Vicki
   # Play a sound if wanted
   #afplay ~/sounds/beepbeep.wav                                                                                          
 fi

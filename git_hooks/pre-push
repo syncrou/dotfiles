@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# If a force push - let's have some fun
+
+push_command=$(ps -ocommand= -p $PPID)                                                                                  
+
+if [[ $push_command =~ 'force' ]]; then                                                                                 
+  say "I'm sorry Dave, I'm afraid I can't do that" using Vicki
+  # Play a sound if wanted
+  #afplay ~/sounds/beepbeep.wav                                                                                          
+fi
+
+# Prevent direct pushes to canonical repos
+if [[ -z "$OVERRIDE" ]]; then
+  if [[ $2 == *ManageIQ/manageiq* || $2 == *code.engineering.redhat.com/cfme* || $2 == *cloudforms/cfme* ]]; then
+    echo "error: You cannot push directly to the canonical repos!"
+    echo "error: Set OVERRIDE=true on this command to override this."
+    exit 1
+  fi
+fi
+
+# Prevent pushes of old CFME history
+if [[ -z "$OVERRIDE_HISTORY" ]]; then
+  init_sha="d34d87219092431c22c88a5865f25f9942ebe1ea"
+  git rev-parse --verify --quiet ${init_sha}^{commit} > /dev/null  # Verify the grafted history exists
+  if [ $? -eq 0 ]; then
+    IFS=' '
+    while read local_ref local_sha remote_ref remote_sha; do
+      if [[ "$local_sha" != "0000000000000000000000000000000000000000" ]]; then # Allow deleting branches
+        merge_sha=`git merge-base $local_sha $init_sha`
+        if [[ "$merge_sha" != $init_sha ]]; then
+          echo "error: You cannot push commits from the old CFME history to $1!"
+          echo "error: Set OVERRIDE_HISTORY=true on this command to allow pushing to 5.2.x"
+          exit 1
+        fi
+      fi
+    done
+  fi
+fi

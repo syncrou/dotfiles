@@ -35,15 +35,16 @@ alias ptc="git log -5 | ack pt-........"
 # Stuff to speed me up
 alias aliases='vim ~/.dotfiles/alias'
 alias api="cd ~/bi/onramp_api"
-alias b="cd ~/bi"
+alias b="cd ~/syncrou"
 alias be="bundle exec"
 alias bi="bundle install"
 alias bj='open https://redhat.bluejeans.com'
 alias bjsu='open https://bluejeans.com/7642919332/?name=Drew%20Bomhof'
 alias bu="bundle update"
-alias cs="ssh centuryd@www.centurydriving.com"
+alias cs="ssh -p3422 centuryd@www.centurydriving.com"
 alias csm="ssh -L 2812:127.0.0.1:2812 centuryd@www.centurydriving.com"
 alias d='cd ~/.dotfiles'
+alias frt="ssh -p3433 centuryd@staging.floridaroadtesting.com"
 alias last-files="last | gitopen show"
 alias nt='vim ~/Dropbox/notes/2016.txt'
 alias m='cd ~/bi/messaging'

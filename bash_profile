@@ -1,4 +1,4 @@
-export PATH=~/.dotfiles/bin:/Volumes/Macintosh\ HD/Users/dbomhof/bin:/usr/local/bin:$PATH
+export PATH=~/.dotfiles/bin:/home/dbomhof/bin:/usr/local/bin:$PATH
 
 # Alias file
 source ~/.dotfiles/alias
@@ -18,6 +18,6 @@ export NODE_PATH=/usr/local/lib/node
 #   access to them
 stty -ixon -ixoff
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

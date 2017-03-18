@@ -134,4 +134,3 @@ source /usr/local/share/chruby/auto.sh
 # Clear out flow control characters <C-s>, <C-q> so VIM has
 #   access to them
 stty -ixon -ixoff
-

@@ -4,7 +4,7 @@ if [ -f /etc/issue ]; then
   alias ll='ls -alGh --color'
 else
   alias ls='ls -FHG'
-  alias ll='lls -alhFHG'
+  alias ll='ls -alhFHG'
 fi
 # Bi ssh aliases
 alias bis='ssh -p 8022'

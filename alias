@@ -39,7 +39,7 @@ alias ptc="git log -5 | ack pt-........"
 
 # Stuff to speed me up
 alias aliases='vim ~/.dotfiles/alias'
-alias api="cd ~/bi/onramp_api"
+alias api="cd ~/syncrou/onramp_api"
 alias b="cd ~/syncrou"
 alias be="bundle exec"
 alias bi="bundle install"

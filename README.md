@@ -13,4 +13,4 @@ and a large number of the aliases / ruby snippets
   Vim plugins are managed through vundle. Vundle will need to be installed to get them.
 
   `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`  
-  Run :BundleInstall in vim.
+  Run `:BundleInstall` in vim.

@@ -71,6 +71,7 @@ alias resq="be 'QUEUE=* rake resque:work'"
 alias retag='ctags -R --languages=ruby --fields=+l --tag-relative=yes'
 alias rs='rails server'
 alias sl='screen -list'
+alias smua='cd ~/syncrou/manageiq-ui-classic && gp && cd ~/syncrou/manageiq-providers-azure && gp && cd ~/syncrou/manageiq-gems/pending && gp && miq && smu'
 alias smu='gco master && gp && gco syncrou_master && git rebase master && git push origin master && bin/update'
 alias so='source ~/.dotfiles/bash_profile'
 alias solr='be rake sunspot:solr:run'

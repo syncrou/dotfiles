@@ -209,5 +209,6 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-" Remove trailing whitespace on save for ruby files.
+" Remove trailing whitespace on save for ruby and python files.
 au BufWritePre *.rb :%s/\s\+$//e
+au BufWritePre *.py :%s/\s\+$//e

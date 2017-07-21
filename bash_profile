@@ -8,7 +8,9 @@ export EDITOR='vim'
 # Git completion
 source ~/.dotfiles/git-completion.bash
 source ~/.dotfiles/git-prompt.sh
-source ~/.profile
+if [ -f ~/.profile ]; then
+    source ~/.source
+fi
 PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
 
 # Node package manager

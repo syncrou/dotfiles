@@ -17,7 +17,7 @@ alias gc='git commit'
 alias gca='git commit -a'
 alias gcam='git commit -a -m'
 alias gco="git co"
-alias gcaa='git commit -a --amend -C HEAD'
+alias gcaa='git commit --amend'
 alias gcl='git clone'
 alias gcm='git commit -m'
 alias gco='git checkout'
@@ -47,6 +47,7 @@ alias bj='open https://redhat.bluejeans.com'
 alias bjsu='open https://bluejeans.com/7642919332/?name=Drew%20Bomhof'
 alias bu="bundle update"
 alias cs="ssh -p3422 centuryd@www.centurydriving.com"
+alias csl="docker exec -it apache-php /bin/bash"
 alias csm="ssh -p3422 -L 2812:127.0.0.1:2812 centuryd@www.centurydriving.com"
 alias d='cd ~/.dotfiles'
 alias dump='cd ~/syncrou/playbooks && ansible-playbook dump_db.yml'
@@ -66,6 +67,7 @@ alias msm="ssh -L 2812:127.0.0.1:2812 messaging@api.centurydriving.com"
 alias o='cd ~/syncrou/onramp'
 alias ol='vim `last-files`'
 alias rc='rails console'
+alias pl='cd ~/syncrou/playbooks'
 alias redis='redis-server'
 alias resq="be 'QUEUE=* rake resque:work'"
 alias retag='ctags -R --languages=ruby --fields=+l --tag-relative=yes'

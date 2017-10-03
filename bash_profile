@@ -21,5 +21,8 @@ export NODE_PATH=/usr/local/lib/node
 stty -ixon -ixoff
 
 #test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+if [ -f /etc/issue]; then
+    echo "Must be Linux - no RVM"
+else
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+fi

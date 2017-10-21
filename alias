@@ -5,6 +5,7 @@ if [ -f /etc/issue ]; then
 else
   alias ls='ls -FHG'
   alias ll='ls -alhFHG'
+  alias python='/usr/local/opt/python/libexec/bin/python2'
 fi
 # Bi ssh aliases
 alias bis='ssh -p 8022'
@@ -52,6 +53,10 @@ alias cs="ssh -p3422 centuryd@www.centurydriving.com"
 alias csl="docker exec -it apache-php /bin/bash"
 alias csm="ssh -p3422 -L 2812:127.0.0.1:2812 centuryd@www.centurydriving.com"
 alias d='cd ~/.dotfiles'
+alias dps='docker ps'
+alias dpsa='docker ps -a'
+alias dstp='docker stop $(docker ps -aq)'
+alias dstrt='docker start $(docker ps -aq)'
 alias dump='cd ~/syncrou/playbooks && ansible-playbook dump_db.yml'
 alias frt="ssh -p3422 centuryd@staging.floridaroadtesting.com"
 alias frtm="ssh -p3422 -L 2812:127.0.0.1:2812 centuryd@staging.floridaroadtesting.com"

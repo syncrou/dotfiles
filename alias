@@ -24,6 +24,7 @@ alias gcaa='git commit --amend'
 alias gcl='git clone'
 alias gcm='git commit -m'
 alias gco='git checkout'
+alias gcpm='git cherry-pick -e -x -m 1'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gl="git l"

@@ -49,6 +49,7 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias bj='open https://redhat.bluejeans.com'
 alias bjsu='open https://bluejeans.com/7642919332/?name=Drew%20Bomhof'
+alias blist='ssh -p3422 blist@staging.floridaroadtesting.com'
 alias bu="bundle update"
 alias cs="ssh -p3422 centuryd@www.centurydriving.com"
 alias csl="docker exec -it apache-php /bin/bash"

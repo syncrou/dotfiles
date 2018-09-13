@@ -27,6 +27,7 @@ alias gco='git checkout'
 alias gcpm='git cherry-pick -e -x -m 1'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias gf='git fetch --all'
 alias gl="git l"
 alias gp="git pull"
 alias gpr="git pull --rebase"
@@ -51,6 +52,8 @@ alias bj='open https://redhat.bluejeans.com'
 alias bjsu='open https://bluejeans.com/7642919332/?name=Drew%20Bomhof'
 alias blist='ssh -p3422 blist@staging.floridaroadtesting.com'
 alias bu="bundle update"
+alias cms_stop="docker stop phpapache2_apache-cms_1"
+alias cms_start="docker start phpapache2_apache-cms_1"
 alias cs="ssh -p3422 centuryd@www.centurydriving.com"
 alias csl="docker exec -it apache-php /bin/bash"
 alias csm="ssh -p3422 -L 2812:127.0.0.1:2812 centuryd@www.centurydriving.com"

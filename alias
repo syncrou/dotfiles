@@ -5,7 +5,6 @@ if [ -f /etc/issue ]; then
 else
   alias ls='ls -FHG'
   alias ll='ls -alhFHG'
-  alias python='/usr/local/opt/python/libexec/bin/python2'
 fi
 # Bi ssh aliases
 alias bis='ssh -p 8022'

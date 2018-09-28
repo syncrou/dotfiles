@@ -17,7 +17,6 @@ Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdTree'
 Plugin 'msanders/snipmate.vim'
-Plugin 'syncrou/vim-flog'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'danro/rename.vim'
 Plugin 'airblade/vim-rooter'
@@ -43,14 +42,6 @@ syntax enable                     " Turn on syntax highlighting.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
-" Flog-vim plugin settings
-:silent exe "g:flog_enable"
-":silent exe "let g:flog_low_color=#a5c261"
-":silent exe "let g:flog_medium_color=#ffc66d"
-":silent exe "let g:flog_high_color=#cc7833"
-":silent exe "let g:flog_background_color=#323232"
-":silent exe "let g:flog_medium_limit=10"
-":silent exe "let g:flog_high_limit=20"
 let g:syntastic_javascript_checkers = ['jshint']
 
 

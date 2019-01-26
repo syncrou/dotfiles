@@ -43,7 +43,7 @@ alias ptc="git log -5 | ack pt-........"
 
 # Stuff to speed me up
 alias aliases='vim ~/.dotfiles/alias'
-alias api="cd ~/syncrou/onramp_api"
+alias api="cd ~/onramp_api"
 alias apist="docker start api"
 alias apistp="docker stop api"
 alias awx_task='docker exec -it awx_task bash'
@@ -55,6 +55,7 @@ alias bj='open https://redhat.bluejeans.com'
 alias bjsu='open https://bluejeans.com/7642919332/?name=Drew%20Bomhof'
 alias blist='ssh -p3422 blist@staging.floridaroadtesting.com'
 alias bu="bundle update"
+alias cms="cd ~/century-driving-school"
 alias cmsst="docker stop cms"
 alias cmsstp="docker start cms"
 alias cs="ssh -p3422 centuryd@www.centurydriving.com"
@@ -68,7 +69,6 @@ alias dstrt='docker start $(docker ps -aq)'
 alias dump='cd ~/syncrou/playbooks && ansible-playbook dump_db.yml'
 alias frt="ssh -p3422 centuryd@staging.floridaroadtesting.com"
 alias frtm="ssh -p3422 -L 2812:127.0.0.1:2812 centuryd@staging.floridaroadtesting.com"
-alias harv="ssh -p4522 bomhofd@harvestcrc.com"
 alias last-files="last | gitopen show"
 alias m='cd ~/bi/messaging'
 alias matrix="cat /dev/urandom | hexdump"
@@ -80,9 +80,8 @@ alias msfrt='ssh -p5424 messaging@api.floridaroadtesting.com'
 alias msm="ssh -L 2812:127.0.0.1:2812 messaging@api.centurydriving.com"
 alias nt="chromium-browser http://"
 alias nts="chromium-browser https://"
-alias o='cd ~/syncrou/onramp'
+alias o='cd ~/onramp'
 alias ol='vim `last-files`'
-alias ost='docker start onramp'
 alias ostp='docker stop onramp'
 alias ost='docker start onramp'
 alias pl='cd ~/syncrou/playbooks'

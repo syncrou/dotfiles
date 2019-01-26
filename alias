@@ -5,7 +5,6 @@ if [ -f /etc/issue ]; then
 else
   alias ls='ls -FHG'
   alias ll='ls -alhFHG'
-  alias python='/usr/local/opt/python/libexec/bin/python2'
 fi
 # Bi ssh aliases
 alias bis='ssh -p 8022'
@@ -47,6 +46,8 @@ alias aliases='vim ~/.dotfiles/alias'
 alias api="cd ~/syncrou/onramp_api"
 alias apist="docker start api"
 alias apistp="docker stop api"
+alias awx_task='docker exec -it awx_task bash'
+alias awx_web='docker exec -it awx_web bash'
 alias b="cd ~/syncrou"
 alias be="bundle exec"
 alias bi="bundle install"
@@ -84,20 +85,23 @@ alias ol='vim `last-files`'
 alias ost='docker start onramp'
 alias ostp='docker stop onramp'
 alias ost='docker start onramp'
+alias pl='cd ~/syncrou/playbooks'
 alias play='cd ~/syncrou/playbooks'
 alias rc='rails console'
-alias pl='cd ~/syncrou/playbooks'
 alias redis='redis-server'
 alias resq="be 'QUEUE=* rake resque:work'"
 alias retag='ctags -R --languages=ruby --fields=+l --tag-relative=yes'
 alias rs='rails server'
+alias san='source ~/syncrou/ansible/hacking/env-setup'
 alias sl='screen -list'
 alias smua='cd ~/syncrou/manageiq-ui-classic && gp && cd ~/syncrou/manageiq-providers-azure && gp && cd ~/syncrou/manageiq-gems/pending && gp && miq && smu'
 alias smu='gco master && gp && gco syncrou_master && git rebase master && git push origin master && bin/update'
 alias so='source ~/.dotfiles/bash_profile'
 alias solr='be rake sunspot:solr:run'
+alias sp='cd ~/syncrou/insights-api-service_catalog'
 alias ss='screen -S'
 alias src='cd ~/src'
+alias swag='swagger-codegen generate -l rails5 -i public/doc/swagger-2.yaml -o /tmp/sp -t swagger-codegen-templates/'
 alias sx='screen -x'
 alias tapi='cd ~/syncrou/ansible_tower_client'
 alias tl='tmux ls'

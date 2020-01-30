@@ -12,7 +12,7 @@ source ~/.dotfiles/git-prompt.sh
 if [ -f ~/.profile ]; then
     source ~/.source
 fi
-PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
+PS1='[\u@\h \w$(__git_ps1 " (%s) - ($(kns))")]\$ '
 
 # Node package manager
 export NODE_PATH=/usr/local/lib/node

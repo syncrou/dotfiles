@@ -121,15 +121,21 @@ export PATH=~/.dotfiles/bin:/home/dbomhof/bin:/usr/local/bin:$PATH
 
 # Alias file
 source ~/.dotfiles/alias
-
+# Kubectl namespace
+alias kns='kubectl config current-context | cut -d / -f 1'
+export KNS=kns
 
 # Git completion
 source ~/.dotfiles/git-completion.bash
 source ~/.dotfiles/git-prompt.sh
-PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
+PS1='[\u@\h \w$(__git_ps1 " (%s) - ($KNS)")]\$ '
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+
+# Kubectl completion
+source <(kubectl completion bash)
+complete -F __start_kubectl k
 
 # Clear out flow control characters <C-s>, <C-q> so VIM has
 #   access to them

@@ -34,6 +34,8 @@ alias gpush="git push"
 alias gpsuh="git push"
 alias gs="git st"
 alias gcnt="git shortlog -s -n"
+alias gus="git -c http.sslVerify=false"
+alias gusp="git -c http.sslVerify=false push origin HEAD"
 
 
 # Generic GIT aliases for pivotal commits
@@ -73,6 +75,7 @@ alias dump='cd ~/syncrou/playbooks && ansible-playbook dump_db.yml'
 alias frt="ssh -p3422 centuryd@staging.floridaroadtesting.com"
 alias frtm="ssh -p3422 -L 2812:127.0.0.1:2812 centuryd@staging.floridaroadtesting.com"
 alias k="kubectl"
+alias kns="kubectl config current-context | cut -d / -f 1"
 alias last-files="last | gitopen show"
 alias m='cd ~/bi/messaging'
 alias matrix="cat /dev/urandom | hexdump"
@@ -105,7 +108,7 @@ alias sp='cd ~/syncrou/insights-api-service_catalog'
 alias ss='screen -S'
 alias src='cd ~/src'
 alias swag='swagger-codegen generate -l rails5 -i public/doc/swagger-2.yaml -o /tmp/sp -t swagger-codegen-templates/'
-alias svcu='gco upstream_master && git pull upstream HEAD && gco master && git rebase upstream_master && git push origin master && so && rvm use ruby-2.4.5@svcat && bundle update'
+alias svcu='gco upstream_master && git pull upstream HEAD && gco master && git rebase upstream_master && git push origin master && so && rvm use ruby-2.5.5@svcat && bundle update'
 alias sx='screen -x'
 alias tapi='cd ~/syncrou/ansible_tower_client'
 alias tl='tmux ls'

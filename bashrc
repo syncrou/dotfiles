@@ -147,3 +147,6 @@ export PATH=~/.kubectx:$PATH
 source <(kubectl completion bash)
 alias k=kubectl
 complete -F __start_kubectl k
+source <(kubectl completion bash)
+alias k=kubectl
+complete -F __start_kubectl k

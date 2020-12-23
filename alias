@@ -75,7 +75,7 @@ alias dump='cd ~/syncrou/playbooks && ansible-playbook dump_db.yml'
 alias frt="ssh -p3422 centuryd@staging.floridaroadtesting.com"
 alias frtm="ssh -p3422 -L 2812:127.0.0.1:2812 centuryd@staging.floridaroadtesting.com"
 alias k8s="mosh k8s.bomhof.lan"
-alias k8se="mosh k8s.bomhof.lan --ssh='ssh -p 8022'"
+alias k8se="mosh k8s.bomhof.lan --ssh=\"ssh -p 8022\""
 alias k="kubectl"
 alias ki="kubectl --insecure-skip-tls-verify"
 alias kx="kubectx"

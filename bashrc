@@ -141,6 +141,8 @@ complete -F __start_kubectl k
 #   access to them
 stty -ixon -ixoff
 
+#krew
+export PATH="${PATH}:${HOME}/.krew/bin"
 
 #kubectx and kubens
 export PATH=~/.kubectx:$PATH
@@ -148,5 +150,5 @@ source <(kubectl completion bash)
 alias k=kubectl
 complete -F __start_kubectl k
 source <(kubectl completion bash)
-alias k=kubectl
-complete -F __start_kubectl k
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

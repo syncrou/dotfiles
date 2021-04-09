@@ -29,7 +29,5 @@ fi
 export PATH="/usr/local/opt/python/libexec/bin:/Users/dbomhof/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-export PATH=${JAVA_HOME}/bin:$PATH
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PATH="${PATH}:${HOME}/.krew/bin"

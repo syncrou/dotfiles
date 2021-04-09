@@ -44,6 +44,7 @@ alias pt="git log -1 | ack -1o pt-........"
 alias ptc="git log -5 | ack pt-........"
 
 # Stuff to speed me up
+alias app='gco upstream_master; git pull upstream master; gco master; git rebase upstream_master; git push origin HEAD;'
 alias aliases='vim ~/.dotfiles/alias'
 alias api="cd ~/onramp_api"
 alias apist="docker start api"

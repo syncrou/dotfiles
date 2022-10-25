@@ -30,3 +30,6 @@ export PATH="/usr/local/opt/python/libexec/bin:/Users/dbomhof/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+# Kubectl completion
+source <(kubectl completion bash)
+complete -F __start_kubectl k

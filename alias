@@ -13,6 +13,7 @@ alias bisc='scp -P 8022'
 # git aliases
 alias gad='git add --all'
 alias gbr="git br"
+alias gbp="git checkout develop; git pull; git checkout master; git cherry-pick -e -x -m 1"
 alias gc='git commit'
 alias gca='git commit -a'
 alias gam='git commit -m'
@@ -95,6 +96,7 @@ alias ost='docker start onramp'
 alias pl='cd ~/syncrou/playbooks'
 alias play='cd ~/syncrou/playbooks'
 alias rc='rails console'
+alias rasak='source <(echo KUBECONFIG=~/.dotfiles/k8s/rasa-x-cluster-config.yaml)'
 alias redis='redis-server'
 alias resq="be 'QUEUE=* rake resque:work'"
 alias retag='ctags -R --languages=ruby --fields=+l --tag-relative=yes'

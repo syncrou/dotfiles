@@ -33,3 +33,4 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 # Kubectl completion
 source <(kubectl completion bash)
 complete -F __start_kubectl k
+export PATH="${PATH}:${HOME}/.krew/bin"
